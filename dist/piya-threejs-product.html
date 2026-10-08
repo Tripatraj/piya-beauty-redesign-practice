@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="PIYA Moisturizing Face Lotion — turmeric and rose hydration in an interactive 3D product experience." />
+  <title>PIYA — Moisturizing Face Lotion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23241d1b'/%3E%3Cpath d='M18 14h28L32 50z' fill='%23d8a34a'/%3E%3Ccircle cx='32' cy='29' r='8' fill='%23f7eee5'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#241d1b;--muted:#786d68;--cream:#f8f3ec;--rose:#d98986;--gold:#bb842c;--line:rgba(36,29,27,.14)}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}
+    body{overflow-x:hidden}.shell{min-height:100svh;display:grid;grid-template-rows:auto 1fr;position:relative;background:radial-gradient(circle at 68% 44%,#fff 0 16%,transparent 46%),linear-gradient(118deg,#f3e7dc 0,#fbf8f4 48%,#f4e8e3 100%)}
+    header{height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(24px,5vw,76px);position:relative;z-index:5;border-bottom:1px solid var(--line)}
+    .brand{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:.24em}.brand i{color:var(--gold);font-weight:500}.nav-note{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+    main{display:grid;grid-template-columns:minmax(330px,.82fr) minmax(420px,1.18fr);min-height:calc(100svh - 88px)}
+    .copy{padding:clamp(54px,9vw,132px) 24px 56px clamp(24px,8vw,120px);display:flex;flex-direction:column;justify-content:center;z-index:3}
+    .eyebrow{display:flex;align-items:center;gap:14px;text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:var(--muted);margin:0 0 22px}.eyebrow:before{content:"";width:36px;height:1px;background:var(--gold)}
+    h1{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(58px,7.2vw,112px);line-height:.86;letter-spacing:-.045em;margin:0;max-width:7ch}.italic{display:block;font-style:italic;color:var(--rose);margin-left:.74em}
+    .intro{font-size:clamp(16px,1.4vw,19px);line-height:1.7;color:var(--muted);max-width:430px;margin:34px 0}
+    .actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.cta{display:inline-flex;align-items:center;gap:30px;background:var(--ink);color:white;text-decoration:none;padding:17px 20px 17px 24px;border-radius:999px;font-size:14px;transition:.25s}.cta span{width:34px;height:34px;border-radius:50%;background:var(--rose);display:grid;place-items:center;font-size:18px}.cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(36,29,27,.16)}
+    .detail{font-size:13px;line-height:1.45;color:var(--muted)}.detail strong{display:block;color:var(--ink);font-size:14px}
+    .stage{position:relative;min-height:620px;cursor:grab}.stage:active{cursor:grabbing}#scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+    .hint{position:absolute;right:clamp(22px,4vw,66px);bottom:30px;z-index:4;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;align-items:center}.hint:before{content:"↔";font-size:18px;color:var(--rose)}
+    .badge{position:absolute;top:36px;right:clamp(22px,5vw,74px);z-index:4;width:104px;height:104px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;text-align:center;font-family:"Playfair Display",serif;font-style:italic;font-size:14px;line-height:1.25;transform:rotate(8deg);background:rgba(255,255,255,.35);backdrop-filter:blur(8px)}
+    @media(max-width:850px){header{height:72px}.nav-note{display:none}main{grid-template-columns:1fr;grid-template-rows:auto minmax(480px,58vh)}.copy{padding:48px 24px 12px;justify-content:flex-start}h1{font-size:clamp(58px,18vw,88px);max-width:none}.intro{margin:24px 0}.stage{min-height:480px}.badge{top:18px;width:84px;height:84px;font-size:12px}.hint{bottom:18px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header><div class="brand">P<i>I</i>YA</div><div class="nav-note">Botanical face care · 60 ml</div></header>
+    <main>
+      <section class="copy">
+        <p class="eyebrow">Daily moisture ritual</p>
+        <h1>Softness, <span class="italic">bottled.</span></h1>
+        <p class="intro">A comforting face lotion infused with turmeric and rose. Silky hydration, a weightless finish, and a softly luminous glow.</p>
+        <div class="actions">
+          <a class="cta" href="#details">Discover the formula <span>↗</span></a>
+          <div class="detail" id="details"><strong>Turmeric + rose</strong>2 fl oz · 60 ml</div>
+        </div>
+      </section>
+      <section class="stage" aria-label="Interactive 3D model of PIYA moisturizing face lotion">
+        <canvas id="scene"></canvas>
+        <div class="badge">made for<br>soft, dewy<br>skin</div>
+        <div class="hint">drag to turn</div>
+      </section>
+    </main>
+  </div>
+  <script type="module">
+    import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js';
+    import { RoomEnvironment } from 'https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/environments/RoomEnvironment.js';
+
+    const canvas=document.querySelector('#scene'), stage=document.querySelector('.stage');
+    const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+    renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.outputColorSpace=THREE.SRGBColorSpace; renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.2; renderer.shadowMap.enabled=true;
+    const scene=new THREE.Scene(); const camera=new THREE.PerspectiveCamera(29,1,.1,100); camera.position.set(0.2,1.0,8.4);
+    scene.environment=new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(renderer),.04).texture;
+    scene.add(new THREE.HemisphereLight(0xfff8ef,0x9a7568,1.8)); const key=new THREE.DirectionalLight(0xffffff,4);key.position.set(-4,7,5);key.castShadow=true;scene.add(key);
+    const product=new THREE.Group(); product.position.set(-.15,-.34,0); scene.add(product);
+    const ivory=new THREE.MeshPhysicalMaterial({color:0xe9e5d8,roughness:.38,metalness:.03,clearcoat:.28,clearcoatRoughness:.35});
+    const gold=new THREE.MeshPhysicalMaterial({color:0xc58a2d,roughness:.24,metalness:.82,clearcoat:.4});
+    const white=new THREE.MeshPhysicalMaterial({color:0xf8f7f2,roughness:.32});
+    const glass=new THREE.MeshPhysicalMaterial({color:0xffffff,transparent:true,opacity:.25,roughness:.08,metalness:0,transmission:.9,thickness:.13,ior:1.45});
+    const shadowMat=new THREE.MeshBasicMaterial({color:0x9b6f63,transparent:true,opacity:.12,depthWrite:false});
+    function mesh(g,m,y){const x=new THREE.Mesh(g,m);x.position.y=y;x.castShadow=x.receiveShadow=true;product.add(x);return x}
+    const body=mesh(new THREE.CapsuleGeometry(1.06,2.22,12,64),ivory,-.25);body.scale.set(1,.98,.82);
+    mesh(new THREE.CylinderGeometry(.56,.78,.75,64),ivory,1.34);
+    mesh(new THREE.CylinderGeometry(.70,.70,.58,64),gold,1.73);
+    mesh(new THREE.CylinderGeometry(.47,.47,.58,48),white,2.28);
+    mesh(new THREE.CylinderGeometry(.58,.58,1.04,64,1,true),glass,2.32);
+    const capTop=mesh(new THREE.CylinderGeometry(.58,.58,.05,64),glass,2.84);capTop.material.side=THREE.DoubleSide;
+    const pump=mesh(new THREE.CylinderGeometry(.28,.32,.48,48),white,2.42); pump.scale.z=.92;
+    const label=document.createElement('canvas');label.width=900;label.height=980;const c=label.getContext('2d');c.clearRect(0,0,900,980);c.fillStyle='#211a18';c.textAlign='center';c.font='42px DM Sans';c.fillText('◇',450,164);c.font='92px Playfair Display';c.letterSpacing='10px';c.fillText('PIYA',450,310);c.font='600 33px DM Sans';c.fillText('Moisturizing',450,430);c.fillText('Face Lotion',450,472);c.font='500 26px DM Sans';c.fillText('Infused with',450,590);c.fillText('Turmeric and Rose',450,630);c.font='500 22px DM Sans';c.fillText('NET WT. 2 FL OZ · 60 ML',450,750);
+    const tex=new THREE.CanvasTexture(label);tex.colorSpace=THREE.SRGBColorSpace;const labelMat=new THREE.MeshBasicMaterial({map:tex,transparent:true,depthWrite:false});const front=new THREE.Mesh(new THREE.PlaneGeometry(1.55,1.72),labelMat);front.position.set(0,-.36,.86);product.add(front);
+    const pedestal=new THREE.Mesh(new THREE.CircleGeometry(2.05,64),new THREE.MeshBasicMaterial({color:0xd8afa3,transparent:true,opacity:.2,depthWrite:false}));pedestal.rotation.x=-Math.PI/2;pedestal.scale.y=.28;pedestal.position.set(-.1,-2.02,.15);scene.add(pedestal);
+    const ribbonMat=new THREE.MeshPhysicalMaterial({color:0xf0e9db,roughness:.55,side:THREE.DoubleSide});const pts=[];for(let i=0;i<90;i++){const a=i/89;pts.push(new THREE.Vector3(-3.2+a*5.6,-1.55+Math.sin(a*5.2)*.16,-.65+Math.sin(a*3.1)*.55));}const ribbon=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),180,.47,14,false),ribbonMat);ribbon.scale.y=.42;ribbon.rotation.y=-.25;scene.add(ribbon);
+    const rose=new THREE.Group();rose.position.set(1.65,-.55,-.38);rose.rotation.set(-.55,.25,.15);scene.add(rose);const petalMat=new THREE.MeshPhysicalMaterial({color:0xe89a9b,roughness:.55,side:THREE.DoubleSide,clearcoat:.12});for(let i=0;i<34;i++){const a=i*2.399,rad=.055*i;const petal=new THREE.Mesh(new THREE.SphereGeometry(.32+rad*.11,22,12,0,Math.PI*2,0,Math.PI*.55),petalMat);petal.scale.set(1,.25+rad*.18,.9);petal.position.set(Math.cos(a)*rad,Math.sin(a)*rad,rad*.08);petal.rotation.set(Math.PI*.42,a,-.22+rad*.35);rose.add(petal)}rose.scale.set(1.15,1.15,1.15);
+    let targetY=-.14,drag=false,last=0;stage.addEventListener('pointerdown',e=>{drag=true;last=e.clientX;stage.setPointerCapture(e.pointerId)});stage.addEventListener('pointermove',e=>{if(drag){targetY+=(e.clientX-last)*.009;last=e.clientX}});stage.addEventListener('pointerup',()=>drag=false);stage.addEventListener('pointercancel',()=>drag=false);
+    function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();product.scale.setScalar(w<520?.8:1);camera.position.z=w<520?9.6:8.4)}
+    new ResizeObserver(resize).observe(stage);let t=0;function loop(){requestAnimationFrame(loop);t+=.01;if(!drag)targetY+=.0018;product.rotation.y+=(targetY-product.rotation.y)*.06;product.position.y=-.34+Math.sin(t)*.035;rose.rotation.z=.15+Math.sin(t*.65)*.025;renderer.render(scene,camera)}resize();loop();
+  </script>
+</body>
+</html>
+

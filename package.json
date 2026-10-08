@@ -1,0 +1,25 @@
+{
+  "name": "piya-beauty-editorial",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:agentation": "esbuild src/agentation.jsx --bundle --minify --format=iife --outfile=dist/agentation.js",
+    "build:product": "esbuild src/product-experience.js --bundle --minify --format=iife --outfile=dist/product-experience.js",
+    "build:hero": "esbuild src/hero-film.js --bundle --minify --format=iife --outfile=dist/hero-film.js && esbuild src/hero-film.css --minify --outfile=dist/hero-film.css",
+    "test:hero": "node --test tests/hero-film.test.mjs",
+    "build": "npm run build:agentation && npm run build:product && npm run build:hero"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "gsap": "^3.15.0",
+    "lottie-web": "^5.13.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "agentation": "^3.1.2",
+    "esbuild": "^0.28.2"
+  }
+}
