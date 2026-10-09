@@ -95,7 +95,7 @@
   let lastTrigger = null;
 
   function renderProducts(list = products) {
-    productGrid.innerHTML = list.length ? list.map((p,i) => `<article class="search-product"><div class="search-product-media"><img src="${p.image}" alt="${p.name}"><span class="product-rank">0${i+1}</span><button class="quick-add" type="button" data-add-product="${p.id}">Add to ritual</button></div><h3>${p.name}</h3><p>${p.detail} · ${money(p.price)}</p></article>`).join('') : '<div class="search-empty">No ritual found. Try “turmeric” or “hydrate”.</div>';
+    productGrid.innerHTML = list.length ? list.map(p => `<article class="search-product"><div class="search-product-media"><img src="${p.image}" alt="${p.name}"><button class="quick-add" type="button" data-add-product="${p.id}">Add to ritual</button></div><h3>${p.name}</h3><p>${p.detail} · ${money(p.price)}</p></article>`).join('') : '<div class="search-empty">No ritual found. Try “turmeric” or “hydrate”.</div>';
   }
   function saveCart(){ localStorage.setItem(storageKey,JSON.stringify(cart)); renderCart(); }
   function renderCart(){
