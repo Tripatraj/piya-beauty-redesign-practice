@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Customer Care — PIYA Beauty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/internal.css">
+  <link rel="stylesheet" href="/commerce-ui.css">
+  <style>
+    :root{--care-ink:#1c291f;--care-cream:#f4f0e6;--care-line:rgba(28,41,31,.18)}
+    .care-hero{min-height:62vh;padding:10rem 6vw 5rem;display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:5vw;background:#ded6c5}
+    .care-hero h1{max-width:8ch;margin:.7rem 0 0;font-size:clamp(4rem,7vw,7rem);line-height:.92}
+    .care-hero p{max-width:520px;color:#536057;font-size:1.05rem}
+    .care-layout{display:grid;grid-template-columns:280px 1fr;gap:7vw;padding:7rem 6vw;background:var(--care-cream)}
+    .care-nav{position:sticky;top:110px;align-self:start;display:grid;border-top:1px solid var(--care-line)}
+    .care-nav a{padding:1rem 0;border-bottom:1px solid var(--care-line);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase}
+    .care-content{max-width:780px}.care-section{padding:0 0 6rem;scroll-margin-top:120px}.care-section+.care-section{padding-top:5rem;border-top:1px solid var(--care-line)}
+    .care-section h2{margin:0 0 1.5rem;font-size:clamp(2.7rem,4vw,4.5rem)}.care-section h3{margin:2rem 0 .5rem;font-family:"DM Sans",sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}.care-section p{color:#566159;line-height:1.75}.care-card{margin-top:2rem;padding:2rem;border:1px solid var(--care-line);background:#ebe4d7}.care-card a{display:inline-block;margin-top:1rem;padding-bottom:.2rem;border-bottom:1px solid currentColor;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+    @media(max-width:800px){.care-hero{grid-template-columns:1fr;padding:8rem 1.4rem 4rem}.care-layout{grid-template-columns:1fr;padding:4rem 1.4rem}.care-nav{position:static;grid-template-columns:1fr 1fr}.care-nav a{padding-right:1rem}}
+  </style>
+</head>
+<body>
+  <nav class="site-nav site-nav-about" aria-label="Main navigation"><div class="site-nav-inner"><a class="brand" href="/">PIYA BEAUTY</a><div class="site-links"><a href="/#products">SHOP</a><a href="/hero-ingredients/">HERO INGREDIENTS</a><a href="/purpose/">PURPOSE</a><a href="/who-we-are/">WHO WE ARE</a><a href="/blog/">BLOG</a></div><div class="nav-tools icon-tools"><a class="nav-icon" href="https://piyabeauty.com/search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.75"></circle><path d="m16 16 4.25 4.25"></path></svg></a><a class="nav-icon" href="https://piyabeauty.com/account" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"></circle><path d="M5.5 20c.55-4 2.72-6 6.5-6s5.95 2 6.5 6"></path></svg></a><a class="nav-icon" href="https://piyabeauty.com/cart" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M3.75 5h2l1.55 9.1a2 2 0 0 0 1.97 1.66h7.96a2 2 0 0 0 1.95-1.56L20.5 8H6.25"></path><circle cx="9.5" cy="19" r="1"></circle><circle cx="17.5" cy="19" r="1"></circle></svg></a></div></div></nav>
+  <header class="care-hero"><div><span class="eyebrow">Here when you need us</span><h1>Customer care.</h1></div><p>Everything you need to know about delivery, returns, privacy, and your PIYA experience—gathered in one considered place.</p></header>
+  <main class="care-layout"><nav class="care-nav" aria-label="Customer care topics"><a href="#contact">Contact</a><a href="#shipping">Shipping</a><a href="#returns">Returns</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></nav><div class="care-content">
+    <section class="care-section" id="contact"><span class="eyebrow">A thoughtful response</span><h2>Contact us.</h2><p>Questions about your ritual, an order, or a PIYA formula? Our care team is ready to help.</p><div class="care-card"><strong>Customer care</strong><p>Include your order number when writing about an existing order so we can help quickly.</p><a href="mailto:hello@piyabeauty.com">hello@piyabeauty.com</a></div></section>
+    <section class="care-section" id="shipping"><span class="eyebrow">From us to you</span><h2>Shipping.</h2><h3>Standard delivery</h3><p>Orders typically arrive within 3–5 business days after dispatch. Complimentary standard shipping is available on orders over $75.</p><h3>Express delivery</h3><p>Express delivery is available at checkout. Tracking details are sent by email once your ritual is on its way.</p></section>
+    <section class="care-section" id="returns"><span class="eyebrow">Made with care</span><h2>Returns.</h2><p>We want every PIYA ritual to feel right. Unopened items may be returned within 30 days of delivery. For damaged or incorrect items, contact customer care with a photograph and order number.</p></section>
+    <section class="care-section" id="privacy"><span class="eyebrow">Your information</span><h2>Privacy.</h2><p>We collect only the information needed to provide your order, improve your experience, and—when you choose—share PIYA news. Payment details are handled through secure payment providers and are not stored by this prototype.</p></section>
+    <section class="care-section" id="terms"><span class="eyebrow">The essentials</span><h2>Terms.</h2><p>Product information is provided for general skincare guidance and is not medical advice. Prices, availability, and promotions may change. By placing an order, you confirm that the delivery and payment information provided is accurate.</p></section>
+  </div></main>
+  <footer><div class="footer-grid"><div class="footer-brand"><a href="/">PIYA BEAUTY</a><p>Ayurvedic ingredients, perfected by science.</p></div><nav class="footer-links"><a href="/#products">SHOP</a><a href="/who-we-are/">ABOUT PIYA</a><a href="/purpose/">OUR PURPOSE</a><a href="/hero-ingredients/">INGREDIENTS</a><a href="/care.html#contact">CONTACT</a><a href="/care.html#shipping">SHIPPING</a><a href="/care.html#returns">RETURNS</a><a href="/care.html#privacy">PRIVACY</a><a href="/care.html#terms">TERMS</a></nav></div></footer>
+  <script src="/internal-nav.js"></script><script src="/commerce-ui.js"></script>
+</body>
+</html>
